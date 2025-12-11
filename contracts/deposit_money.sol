@@ -1,14 +1,12 @@
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.0;
 
-import "hardhat/console.sol";
+contract Deposit {
 
-contract store_money {
-    address customer;
-    uint amount;
+    address public customer;
+    uint public amount;
 
-    function deposit_money(address customer_input, uint amount_input) public
-    {
+    function deposit_money(address customer_input, uint amount_input) public {
         customer = customer_input;
         amount = amount_input;
     }
